@@ -1,0 +1,239 @@
+#checkout {
+  display: flex;
+  grid-template-columns: 1fr 0.75fr;
+  grid-template-rows: 1fr;
+  width: 85%;
+  gap: 4rem;
+  margin: 5rem auto;
+}
+
+.checkout {
+  border-radius: 8px;
+  background-color: #fffafa;
+  border: 2px solid black;
+  width: 65%;
+  padding: 2rem;
+}
+
+.checkout .title,
+.summary .title {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.mTitle {
+  color: #d87d4a;
+  font-weight: 500;
+  font-size: 1.2rem;
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding-left: 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.checkout label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.billingDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.billingDetails div {
+  width: 17.95rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.billingDetails input,
+.shippingInfo input {
+  width: 100%;
+  height: 46px;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+
+::placeholder {
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.shippingInfo {
+  margin-bottom: 2rem;
+}
+
+.shipping {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.s1 {
+  width: 100%;
+}
+
+.s2,
+.s3,
+.s4 {
+  width: 19.4rem;
+}
+
+.shipping label {
+  margin-bottom: 1.5rem;
+}
+
+.payMode {
+  display: flex;
+  justify-content: space-between;
+}
+
+.emoney,
+.cash {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  width: 19.5rem;
+  background-color: #fff;
+  height: 46px;
+  border: 0.8px solid black;
+  border-radius: 8px;
+}
+
+.emoney input,
+.cash input {
+  cursor: pointer;
+}
+
+#cash,
+#emoney {
+  margin-top: 0rem;
+  margin-right: 0.6rem;
+}
+
+.emoneyDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.emoneyDetails div {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.emoneyDetails input {
+  width: 19.5rem;
+  height: 46px;
+  border-radius: 8px;
+  border: 0.8px solid black;
+}
+
+.summary {
+  width: 40%;
+  height: 50%;
+  border-radius: 8px;
+  background-color: #fffafa;
+  border: 2px solid black;
+  padding: 2rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.itemDetail {
+  width: 65%;
+}
+
+.itemName {
+  margin-bottom: 10%;
+  font-weight: 400;
+  font-size: 1rem;
+  word-spacing: 2px;
+}
+
+.itemPrice {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.total,
+.shipping2,
+.vat,
+.grandTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  line-height: 2.5;
+  font-weight: 400;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.cartImg {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.pay {
+  cursor: pointer;
+  width: 100%;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+
+@media (max-width: 1024px) {
+  #checkout{
+    flex-direction: column;
+  }
+
+  .checkout{
+    width: 100%;
+  }
+  .billingDetails div{
+    width: 100%;
+  }
+
+  .s1,.s2,.s3,.s4, .emoney,.cash{
+    width: 100%;
+  }
+
+  .emoney{
+    margin-bottom: 2rem;
+  }
+
+  .emoneyDetails{
+    flex-direction: column;
+  }
+
+  .emoneyDetails input{
+    width: 100%;
+  }
+
+  .summary{
+    width: 100%;
+  }
+
+  .payMode{
+    flex-direction: column;
+  }
+
+
+}

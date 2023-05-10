@@ -1,0 +1,183 @@
+.companyDetails {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 85%;
+  margin-top: 5rem;
+  margin-bottom: 7rem;
+}
+
+.footerImg {
+  display: flex;
+  justify-content: center;
+}
+.footerImg img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+
+.fp1 {
+  width: 90%;
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.fp2 {
+  width: 90%;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.footer {
+  width: 85%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+hr {
+  border: 2px solid coral;
+  width: 15%;
+}
+
+.fLogo a:link {
+  cursor: pointer;
+  font-size: 1.85rem;
+  font-family: "PT Serif", "serif";
+  text-align: center;
+}
+
+.f1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.fList {
+  text-transform: uppercase;
+  display: flex;
+  width: 30rem;
+}
+
+.fList p {
+  margin-left: 1.5rem;
+}
+
+.fList p:hover {
+  color: coral;
+  scale: 1.2;
+}
+
+.f2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.fp3 {
+  width: 50%;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a,
+a:link {
+  color: white;
+  text-decoration: none;
+  transition: all 0.2s;
+  letter-spacing: 1.5px;
+}
+
+.fb,
+.twitter,
+.insta {
+  cursor: pointer;
+  font-size: 1.6rem;
+  margin: 10px;
+}
+
+.fb:hover,
+.twitter:hover,
+.insta:hover {
+  color: chocolate;
+  scale: 1.4;
+}
+
+.f3 {
+  margin-bottom: 2rem;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .companyDetails {
+    flex-direction: column;
+    margin-top: 25%;
+  }
+
+  .details {
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .fLogo {
+    padding-left: 2rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+
+  .fList {
+    width: 10rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fList p {
+    margin-bottom: 1rem;
+  }
+
+  .fp1,
+  .fp2 {
+    width: 100%;
+  }
+
+  .f1,
+  .f2 {
+    flex-direction: column;
+  }
+
+  .fLinks {
+    margin-top: 2rem;
+  }
+
+  .socialIcons {
+    margin-top: 2rem;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .fp3 {
+    width: 100%;
+  }
+  .footer {
+    text-align: center;
+  }
+}

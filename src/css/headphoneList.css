@@ -1,0 +1,61 @@
+
+.prodBox{
+  width: 85%;
+  height: 635px;
+  display: flex;
+  justify-content: space-between;
+  margin: 8rem auto;
+}
+
+.headphoneImg{
+width: 50%;
+border-radius: 8px;
+}
+
+.headphoneDetails{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 42%;
+}
+
+.headphoneDetails .newProd{
+  color: coral;
+}
+
+.headphoneDetails h2{
+  font-size: 3rem;
+}
+
+.headphoneDetails .prodInfo{
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.flip{
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 875px) {
+  .prodBox{
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .headphoneImg{
+    width: 100%;
+  }
+  .headphoneDetails{
+    text-align: center;
+    margin-top: 3rem;
+    width: 100%;
+    align-items: center;
+  }
+
+  .headphoneDetails h2{
+    font-size: 2.5rem;
+  }
+
+  
+}
+

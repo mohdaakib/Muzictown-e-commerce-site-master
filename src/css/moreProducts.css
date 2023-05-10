@@ -1,0 +1,157 @@
+
+
+.mp1 {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.prod1 {
+  display: flex;
+  height: 550px;
+  background-color: #d87d4a;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.seeProd1 {
+  background-color: black;
+}
+.seeProd1:hover {
+  background-color: #e2dfdf;
+  color: black;
+}
+
+.prod1Img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 60%;
+  background: url("../assets/home/desktop/pattern-circles.svg") no-repeat;
+  background-position: 100% -10%;
+  background-size: 100%;
+}
+
+.prod1Img img {
+  width: 45%;
+  height: 400px;
+}
+
+.prod1Detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding-left: 1rem;
+  padding-right: 8rem;
+}
+
+.prod1Name {
+  font-size: 3.4rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.prod1Info {
+  margin-bottom: 3rem;
+  color: white;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.prod2 {
+  border-radius: 8px;
+  height: 340px;
+  background: url("../assets/home/desktop/image-speaker-zx7.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+.prod2Detail {
+  width: 80%;
+  margin: 7rem auto;
+}
+
+.prod2Name,
+.prod3Name {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.seeProd2 {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+.seeProd2:hover {
+  background-color: black;
+  color: white;
+}
+
+.prod3 {
+  margin: 0 auto;
+  display: flex;
+  width: 85%;
+  height: 340px;
+}
+
+
+.prod3Img {
+  width: 50%;
+  border-radius: 8px;
+  margin-right: 2rem;
+}
+
+.prod3Detail{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e2dfdf;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  #moreProducts{
+    /* margin-bottom: 2rem; */
+  }
+  .mp1{
+    height: 100%;
+  }
+  .prod1{
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .prod1Img{
+    width: 80%;
+  }
+  .prod1Detail{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .prod2Detail{
+    text-align: center;
+    width: 50%;
+  }
+
+  .prod3{
+    flex-direction: column;
+  }
+
+  .prod3Img, .prod3Detail{
+    width: 100%;
+  }
+}
